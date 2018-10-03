@@ -122,6 +122,6 @@ content=index_html
 
 
 
-template.render(pages=pages, content='blog1.html')
-template.render(pages=pages, content='blog2.html')
-template.render(pages=pages, content='contact2.html')
+template.render(pages=pages, content=blog1.html)
+template.render(pages=pages, content=blog2.html)
+template.render(pages=pages, content=contact2.html)

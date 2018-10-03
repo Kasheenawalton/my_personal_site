@@ -1,0 +1,21 @@
+# 2.2.2 phase 2
+
+from jinja2 import Template
+index_html = open("index.html").read()
+template_html = open("base.html").read()
+template = Template(template_html)
+template.render(
+title="Homepage",
+content=index_html,
+)
+
+# 2.3.1 phase 3
+
+{% for page in pages %}
+
+    <a href="{{ page.output_blog1.hmtl }}">{{ my blog }}</a>
+    <a href="{{ page.output_blog2.html }}">{{ about me }}</a>
+    <a href="{{ page.output_contact2.html }}">{{ email me }}</a>
+{% endfor %}
+
+template.render(pages=pages, content=blog1.html)
