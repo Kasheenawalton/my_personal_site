@@ -11,7 +11,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis/css?family=Gloria+Hallujah">
     <style> 
-      body h1 {
+      body  {
         font-family: 'Gloria-Hallujah', cursive;
         font-size: 25px;
      }
