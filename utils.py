@@ -52,4 +52,6 @@ def apply_template():
             content=index_html,
             pages=pages,
             )
-        open(page["output"], "w+").write(page_output)       
+        open(page["output"], "w+").write(page_output)     
+        
+  

@@ -8,7 +8,7 @@ def simple():
 def apply_template(content):
     return results
 
-def main():
+def project():
     content = open("project.1/base.html")
     resulting_html_for_base = apply_template(content)
     
@@ -19,7 +19,7 @@ def apply_template(value, title):
     title_replace = index_html.replace("{{my_blog}}", title)
     return (index_html)
    
-def main():
+def pages():
     for value in pages:
         content = open(value["filename"]).read()
         title = value["title"]
