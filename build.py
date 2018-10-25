@@ -1,6 +1,6 @@
 templates = open('templates/top.html').read()
-about_me = open('content/blog2.html').read()
-contact = open('content/contact2.html').read()
+about_me = open('content/about-me.html').read()
+contact = open('content/contact-me.html').read()
 content = open('content/blog1.html').read()
 templates = open('templates/bottom.html').read()
 html_site = templates + about_me + contact + content + templates
@@ -10,8 +10,8 @@ print(html_site)
 # 2.1 phase 1
 def main():
     top = open("templates/top.html").read()
-    about_me = open("content/blog2.html").read()
-    contact = open("content/contact2.html").read()
+    about_me = open("content/about-me.html").read()
+    contact = open("content/contact-me.html").read()
     content = open("content/blog1.html").read()
     templates = open("templates/bottom.html").read()
      
@@ -23,13 +23,13 @@ if main =="__main__":
 
 pages = [
     {
-        "filename": "content/blog2.html",
-        "output": "content/blog2.hmtl",
+        "filename": "content/about-me.html",
+        "output": "content/about-me.html",
         "title": "About Me",
      },
     {
-        "filename": "content/contact2.html",
-        "output": "content/contact2.html",
+        "filename": "content/contact-me.html",
+        "output": "content/contact-me.html",
         "title": "Contact Me",
      },
      {
@@ -135,5 +135,5 @@ content=index_html
 
 
 template.render(pages=pages, content='blog1.html')
-template.render(pages=pages, content='blog2.html')
-template.render(pages=pages, content='contact2.html')
+template.render(pages=pages, content='about-me.html')
+template.render(pages=pages, content='contact-me.html')
